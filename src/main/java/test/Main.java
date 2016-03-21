@@ -7,7 +7,7 @@ import java.util.List;
 
 public class Main {
   public static void main(String[] args) {
-    System.out.println("いつ恋");
+    System.out.println("開始");
     SimpleDao dao = new SimpleDaoImpl();
     TransactionManager tm = AppConfig.singleton().getTransactionManager();
     tm.required(() -> {
