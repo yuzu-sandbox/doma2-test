@@ -15,6 +15,12 @@ public class Main {
       for(Sample s : samples) {
         System.out.println(s.toString());
       }
+
+      System.out.println("----------");
+
+      Sample sample = dao.find(1);// yuzuが取得できるはず
+      System.out.println(sample.toString());
+
       System.out.println("終了");
     });
   }
