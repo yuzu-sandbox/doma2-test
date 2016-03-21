@@ -1,3 +1,5 @@
+package test;
+
 import org.seasar.doma.SingletonConfig;
 import org.seasar.doma.jdbc.Config;
 import org.seasar.doma.jdbc.SimpleDataSource;
@@ -22,7 +24,7 @@ public class AppConfig implements Config {
     localTransactionDataSource = new LocalTransactionDataSource(dataSource);
   }
 
-  public static AppConfig getInstance() {
+  public static AppConfig singleton() {
     return INSTANCE;
   }
 
